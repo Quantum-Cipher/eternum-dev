@@ -28,3 +28,36 @@ footer {
   background: #1e1e1e;
   font-size: 0.8rem;
 }
+
+/* Section Headings */
+section h2 {
+  margin-top: 2.5rem;
+  font-size: 1.75rem;
+  text-shadow: 0 0 6px #00ffe7;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.5rem;
+}
+
+/* Section Paragraphs */
+section p,
+section ul {
+  line-height: 1.6;
+  margin: 1rem 0;
+}
+
+/* Zora Sigil Link */
+section a[target="_blank"] {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #ffdd57;
+  font-weight: bold;
+}
+
+section a[target="_blank"]:hover {
+  text-decoration: underline;
+}
+
+/* Smooth scroll for nav links */
+html {
+  scroll-behavior: smooth;
+}
