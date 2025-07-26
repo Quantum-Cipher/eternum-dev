@@ -1,0 +1,6 @@
+[submodule "ETR369_Project/lib/forge-std"]
+	path = ETR369_Project/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "ETR369_Project/lib/openzeppelin-contracts"]
+	path = ETR369_Project/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
