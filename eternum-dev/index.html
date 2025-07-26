@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>♾️ Eternum.Dev</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>♾️ Eternum.Dev</h1>
+    <nav>
+      <a href="#mission">Mission</a> |
+      <a href="#tech">Tech Stack</a> |
+      <a href="#computer">The Machine</a> |
+      <a href="#resonance">Resonance Signal</a> |
+      <a href="#sigils">Blueprints</a> |
+      <a href="#manifesto">Manifesto</a> |
+      <a href="#origin">Origin Signal</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="mission"></section>
+    <section id="tech"></section>
+    <section id="computer"></section>
+    <section id="resonance"></section>
+    <section id="sigils"></section>
+    <section id="manifesto"></section>
+    <section id="origin"></section>
+  </main>
+
+  <footer>
+    <p>© 2025 Eternum. Lattice Rising. ♾️🜂🧿</p>
+  </footer>
+
+  <script>
+    async function injectContent(id, file) {
+      const res = await fetch(`sections/${file}`);
+      const content = await res.text();
+      document.getElementById(id).innerHTML = content;
+    }
+
+    injectContent("mission", "mission.html");
+    injectContent("tech", "tech.html");
+    injectContent("computer", "computer.html");
+    injectContent("resonance", "resonance.html");
+    injectContent("sigils", "blueprints.html");
+    injectContent("manifesto", "manifesto.html");
+    injectContent("origin", "origin_signal.html");
+  </script>
+</body>
+</html>
